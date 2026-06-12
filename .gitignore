@@ -1,0 +1,22 @@
+# Local-only media and generated artifacts
+recordings/*
+!recordings/README.md
+transcripts/raw/*
+!transcripts/raw/.gitkeep
+
+# Temporary article copy from setup
+productivity-as-code-article.pdf
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+.kiro/settings/mcp.json
+
+# Tool caches
+.kiro/cache/
+.pytest_cache/
+__pycache__/
+
+# Generated reports can be committed intentionally from reports/
+tmp/

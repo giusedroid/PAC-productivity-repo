@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "productivity-local": {
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "tools/productivity_mcp/server.py"
+      ],
+      "env": {
+        "PRODUCTIVITY_REPO_ROOT": "."
+      }
+    }
+  }
+}

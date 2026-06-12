@@ -1,0 +1,18 @@
+{
+  "enabled": false,
+  "name": "Update README Status",
+  "description": "Example local-first hook. When enabled in Kiro, asks the agent to refresh the living dashboard after customer or project notes change.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "customers/**/*.md",
+      "projects/**/*.md",
+      "active/**/*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review recent changes in customers/, projects/, and active/. Update the 'What Am I Working On Right Now' section of README.md. Keep it concise, preserve the table format, and use only fictional repository context."
+  }
+}
