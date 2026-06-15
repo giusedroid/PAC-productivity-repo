@@ -1,4 +1,4 @@
-# Team Steering: Monthly Business Review Guidelines
+# Personal Steering: Monthly Business Review Guidelines
 
 Use these guidelines when creating fictional Monthly Business Review materials from this repository.
 
