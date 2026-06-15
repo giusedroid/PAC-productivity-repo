@@ -1,0 +1,49 @@
+name: Weekly AgentCore Opportunity Report
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-agentcore-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Kiro CLI
+        run: curl -fsSL https://cli.kiro.dev/install | bash
+
+      - name: Generate AgentCore opportunity report
+        env:
+          KIRO_API_KEY: ${{ secrets.KIRO_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p reports/agentcore
+          REPORT_DATE="$(date -u +%Y-%m-%d)"
+          REPORT_PATH="reports/agentcore/${REPORT_DATE}-agentcore-opportunities.md"
+
+          kiro-cli chat \
+            --no-interactive \
+            --trust-tools=read,grep \
+            "Make use of .kiro/steering/personal/monthly-business-review-guidelines.md to generate a monthly business review summary of all current-month AgentCore opportunities starting from ./customers. Focus only on accounts with AgentCore candidate signals. Include executive summary, account movement, revenue metrics with clearly marked mock assumptions, forecast impact, customer satisfaction signals, internal KPIs, risks and blockers, decisions or asks, and next-month actions. Output only Markdown suitable for saving directly as a report." \
+            > "${REPORT_PATH}"
+
+          echo "REPORT_PATH=${REPORT_PATH}" >> "${GITHUB_ENV}"
+
+      - name: Commit generated report
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "${REPORT_PATH}"
+          git diff --staged --quiet || git commit -m "Add weekly AgentCore opportunity report"
+          git push
