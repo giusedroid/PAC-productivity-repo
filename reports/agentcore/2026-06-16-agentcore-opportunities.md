@@ -1,6 +1,6 @@
 # Monthly Business Review: AgentCore Opportunities
 
-**Report date:** 2026-06-16
+**Date:** 2026-06-16
 **Period:** June 2026
 **Scope:** Accounts with AgentCore candidate signals only
 
@@ -8,51 +8,65 @@
 
 ## Executive Summary
 
-Three accounts show AgentCore candidate signals this month: Northstar Bakes, HelioFleet Services, and LumaLoop Retail. All three have identifiable repeatable decision loops that could benefit from agentic assistance. None are positioned as committed — each requires prerequisite work (data access, telemetry confirmation, or analytics foundation) before AgentCore engagement moves forward. HelioFleet is the strongest near-term candidate if telemetry access is confirmed. Northstar is a natural second mover once the analytics POC proves data freshness. LumaLoop is blocked until POS data export is resolved.
+Three accounts have AgentCore candidate signals this month: Northstar Bakes, HelioFleet Services, and LumaLoop Retail. Each has a distinct agentic workload opportunity, but all share a common prerequisite: data access and quality must be proven before any agent workflow is positioned.
+
+- **Northstar Bakes** is closest to readiness — pending analytics POC completion.
+- **HelioFleet Services** is a strong fit but blocked on telemetry vendor API confirmation.
+- **LumaLoop Retail** has the clearest business pain but the hardest data access blocker.
+
+No account has committed to AgentCore. All opportunities are exploratory.
 
 ---
 
 ## Account Movement
 
-| Account | Prior Status | Current Status | Movement |
+| Customer | Prior Status | Current Status | Movement |
 | --- | --- | --- | --- |
 | Northstar Bakes | Discovery | Discovery — AgentCore candidate identified | Forward |
 | HelioFleet Services | Evaluating | Evaluating — AgentCore candidate identified | Forward |
-| LumaLoop Retail | Blocked | Blocked — AgentCore candidate identified, contingent on data access | Lateral |
+| LumaLoop Retail | Blocked | Blocked — AgentCore candidate identified (contingent) | Lateral |
+
+- **Northstar Bakes:** AgentCore opportunity identified on 2026-06-15 for a campaign performance analyst agent. Depends on analytics foundation (S3 + Athena + QuickSight POC) being proven first.
+- **HelioFleet Services:** AgentCore opportunity identified on 2026-06-15 for a solar maintenance triage assistant. Depends on telemetry vendor API access.
+- **LumaLoop Retail:** AgentCore opportunity identified on 2026-06-15 for a merchandising/replenishment assistant. Contingent on resolving POS data export blocker or establishing CSV fallback.
 
 ---
 
 ## Revenue Metrics
 
-All revenue figures below are mock assumptions. No confirmed financials exist in source notes.
+All financial figures below are mock assumptions — no revenue data exists in source files.
 
-| Customer | Current ARR | Current MRR | Projected YoY | Expansion Opportunity | Forecast Impact | Confidence |
-| ---: | ---: | ---: | ---: | --- | --- | --- |
-| Northstar Bakes | Assumption: GBP 36,000 | Assumption: GBP 3,000 | Assumption: +28% | AgentCore analytics assistant after POC | Positive | Medium |
-| HelioFleet Services | Assumption: GBP 60,000 | Assumption: GBP 5,000 | Assumption: +35% | AgentCore maintenance triage assistant | Positive | Medium-High |
-| LumaLoop Retail | Assumption: GBP 24,000 | Assumption: GBP 2,000 | Assumption: +15% | AgentCore merchandising assistant if data unblocked | Neutral (blocked) | Low |
+| Customer | Current ARR | Current MRR | Projected YoY | Expansion Opportunity | Confidence |
+| --- | ---: | ---: | ---: | --- | --- |
+| Northstar Bakes | Assumption: GBP 36,000 | Assumption: GBP 3,000 | Assumption: +28% | AgentCore analytics agent add-on after POC | Medium |
+| HelioFleet Services | Assumption: GBP 60,000 | Assumption: GBP 5,000 | Assumption: +35% | AgentCore maintenance triage agent | Medium-Low |
+| LumaLoop Retail | Assumption: GBP 24,000 | Assumption: GBP 2,000 | Assumption: +15% | AgentCore replenishment assistant (blocked) | Low |
 
-**Renewal / retention risk:** None flagged this month. All three accounts remain engaged.
+**Notes:**
+
+- Northstar Bakes expansion depends on POC converting to production analytics, then layering AgentCore.
+- HelioFleet expansion assumes telemetry integration unlocks both IoT platform spend and AgentCore agent licensing.
+- LumaLoop expansion is speculative until data access is resolved.
 
 ---
 
 ## Forecast Impact
 
-| Customer | Category | Reason |
+| Customer | Impact | Reason |
 | --- | --- | --- |
-| Northstar Bakes | Positive | Analytics POC conversion would create a natural path to AgentCore expansion; campaign analyst agent is a strong upsell once data foundation is proven |
-| HelioFleet Services | Positive | Telemetry triage agent addresses a measurable cost problem (unnecessary site visits); strong executive sponsor engagement |
-| LumaLoop Retail | Neutral | POS data blocker prevents any forward movement; forecast unchanged until export path is resolved or fallback CSV workflow is accepted |
+| Northstar Bakes | Positive | Analytics POC is progressing; AgentCore adds expansion if POC converts. Stakeholder engagement is strong. |
+| HelioFleet Services | Neutral | Strong fit but dependent on third-party vendor cooperation. No timeline confirmed for API access. |
+| LumaLoop Retail | Negative | POS data blocker unresolved. AgentCore opportunity is contingent on a prerequisite that has not moved. Sponsor impatience is a churn risk. |
 
 ---
 
 ## Customer Satisfaction Signals
 
-| Customer | Delivery Confidence | Executive Sponsor Sentiment | Product Friction | Recent Feedback |
+| Customer | Exec Sponsor Sentiment | Delivery Confidence | Product Friction | Recent Signal |
 | --- | --- | --- | --- | --- |
-| Northstar Bakes | High | High — Maya engaged in discovery and open to POC | Low | Positive response to analytics-first framing |
-| HelioFleet Services | Medium | Medium — Tomas supportive but waiting on telemetry confirmation | Medium — vendor API access unclear | Interested but cautious on timeline |
-| LumaLoop Retail | Low | At risk — Priya wants visible movement; patience declining | High — POS vendor export limits | Frustrated by lack of progress on data access |
+| Northstar Bakes | High | Medium | Low — Shopify export inconsistency is minor | Maya engaged in discovery; receptive to phased approach |
+| HelioFleet Services | Medium | Medium | Medium — telemetry vendor dependency | Tomas interested but waiting for proof of data access |
+| LumaLoop Retail | At risk | Low | High — POS vendor export limits | Priya wants visible movement; patience declining |
 
 ---
 
@@ -60,74 +74,43 @@ All revenue figures below are mock assumptions. No confirmed financials exist in
 
 | KPI | Northstar Bakes | HelioFleet Services | LumaLoop Retail |
 | --- | --- | --- | --- |
-| Days since last customer touchpoint | 1 (AgentCore note 2026-06-15) | 1 (AgentCore note 2026-06-15) | 1 (AgentCore note 2026-06-15) |
-| Follow-ups completed on time | Yes | Pending — telemetry volume unconfirmed | Overdue — escalation not yet sent |
-| Open blockers | 0 | 1 (telemetry vendor access) | 1 (POS data export) |
-| Discovery-to-proposal conversion | In progress | Waiting on prerequisite | Stalled |
-| POC readiness | High — historical exports available | Medium — depends on vendor API | Low — data not accessible |
-| Architecture review completion | Not yet started | Two options drafted (batch/real-time) | Not applicable until data unblocked |
-| Agentic workload candidates identified | 1 (campaign performance analyst) | 1 (solar maintenance triage assistant) | 1 (merchandising replenishment assistant) |
-
----
-
-## AgentCore Candidate Detail
-
-### Northstar Bakes — Campaign Performance Analyst
-
-- **Candidate workload:** Automated same-day campaign summary comparing current vs. prior launches
-- **Business problem:** Manual spreadsheet work combining Shopify exports, margin data, and email context
-- **Adoption readiness:** Medium — depends on analytics POC proving data freshness and schema consistency
-- **Data/integration prerequisites:** S3 landing zone, Athena queries, historical campaign exports
-- **Human approval points:** All outputs remain draft summaries for Maya and Owen to review
-- **Revenue expansion path:** Analytics foundation → AgentCore campaign analyst → personalisation recommendations
-
-### HelioFleet Services — Solar Maintenance Triage Assistant
-
-- **Candidate workload:** Anomaly review, asset correlation, maintenance ticket recommendation, technician briefing
-- **Business problem:** Manual cross-system inspection across vendor dashboards, Jira, and legacy SQL Server
-- **Adoption readiness:** Medium-High — natural decision loop exists; waiting on telemetry API confirmation
-- **Data/integration prerequisites:** Vendor telemetry API access, Jira Service Management read access, asset DB connectivity
-- **Human approval points:** Ticket creation and customer-facing communication require human sign-off
-- **Revenue expansion path:** Read-only anomaly agent → ticket recommendation → full predictive maintenance workflow
-
-### LumaLoop Retail — Merchandising Replenishment Assistant
-
-- **Candidate workload:** Weekly replenishment recommendations combining store sales, ecommerce demand, and inventory signals
-- **Business problem:** Manual, spreadsheet-heavy buying decisions; stockouts on fast-moving products
-- **Adoption readiness:** Low — blocked by POS data export limitations
-- **Data/integration prerequisites:** Store-level SKU sales exports, inventory refresh cadence, product category prioritisation
-- **Human approval points:** All buying and stock transfer decisions require Priya's approval
-- **Revenue expansion path:** CSV fallback → data quality agent → replenishment assistant → demand forecasting
+| Days since last touchpoint | 1 (AgentCore note 2026-06-15) | 1 (AgentCore note 2026-06-15) | 1 (AgentCore note 2026-06-15) |
+| Follow-ups completed on time | Yes | Yes | Overdue — escalation not yet actioned |
+| Open blockers | 0 | 1 (telemetry volume unconfirmed) | 2 (POS export, fallback plan) |
+| Discovery-to-proposal conversion | In progress | Not started | Blocked |
+| POC readiness | High — historical CSV data available | Low — awaiting vendor API confirmation | Low — no usable data pipeline |
+| AgentCore candidates identified | 1 | 1 | 1 |
 
 ---
 
 ## Risks and Blockers
 
-| Risk | Account | Severity | Mitigation |
-| --- | --- | --- | --- |
-| POS vendor refuses automated export | LumaLoop Retail | High | Propose scheduled CSV upload fallback to S3; reframe as data foundation, not forecasting |
-| Telemetry vendor API unavailable or limited | HelioFleet Services | Medium | Start with batch file ingest; confirm fields available before committing to real-time architecture |
-| Analytics POC delays AgentCore timeline | Northstar Bakes | Low | AgentCore is positioned as a follow-on; no commitment made |
-| Sponsor patience declining | LumaLoop Retail | Medium | Deliver visible progress on fallback workflow even if primary export path is stalled |
+| # | Customer | Risk / Blocker | Severity | Mitigation |
+| --- | --- | --- | --- | --- |
+| 1 | LumaLoop Retail | POS vendor does not provide automated or store-level SKU exports | High | Escalate with vendor; design CSV-to-S3 fallback workflow |
+| 2 | LumaLoop Retail | Sponsor impatience may lead to disengagement | Medium | Reframe phase one as data foundation with visible quick wins |
+| 3 | HelioFleet Services | Telemetry vendor API access and data volume unconfirmed | Medium | Identify first vendor API; request sample payload this month |
+| 4 | HelioFleet Services | Integration partner may be needed for field service write-back | Low | Defer write-back; start with read-only anomaly agent |
+| 5 | Northstar Bakes | Shopify export inconsistency could delay POC | Low | Use historical CSV exports as stable fallback for POC |
 
 ---
 
 ## Decisions or Asks
 
-1. **LumaLoop Retail:** Approve escalation to POS vendor account manager for export API discussion. If denied, approve fallback CSV workflow as interim path.
-2. **HelioFleet Services:** Confirm whether integration partner budget is available if vendor API requires middleware.
-3. **Northstar Bakes:** No decision needed — proceeding with analytics POC as planned; AgentCore remains a follow-on conversation.
+1. **LumaLoop Retail:** Decision needed — should we proceed with the CSV fallback plan independently, or wait for vendor escalation response? Recommend: proceed with fallback in parallel.
+2. **HelioFleet Services:** Ask — can we get internal support to engage the telemetry vendor for a sample API call this month?
+3. **All accounts:** Confirm positioning guidance — AgentCore should remain exploratory and not be quoted in any customer proposals until data prerequisites are met.
 
 ---
 
 ## Next-Month Actions
 
-| Account | Action | Owner | Target |
+| Customer | Action | Owner | Target |
 | --- | --- | --- | --- |
-| Northstar Bakes | Complete analytics POC with historical exports; validate data freshness | SA | End of June |
-| Northstar Bakes | Share AgentCore campaign analyst concept with Maya once POC results are available | SA | Early July |
+| Northstar Bakes | Complete analytics POC with historical CSV exports | SA | End of June |
+| Northstar Bakes | Draft AgentCore campaign summary agent brief for internal review | SA | Early July |
 | HelioFleet Services | Confirm telemetry volume and first vendor API fields | SA | End of June |
-| HelioFleet Services | Draft read-only anomaly explanation agent scope document | SA | Mid-July |
-| LumaLoop Retail | Send POS vendor escalation email | SA | This week |
-| LumaLoop Retail | Prepare CSV fallback architecture option for Priya | SA | End of June |
-| All | Update AgentCore opportunity tracker with readiness scores | SA | Monthly |
+| HelioFleet Services | Build read-only anomaly explanation prototype scope | SA | Mid-July |
+| LumaLoop Retail | Escalate POS data export options with vendor | SA | Immediate |
+| LumaLoop Retail | Design and document CSV-to-S3 fallback workflow | SA | End of June |
+| LumaLoop Retail | Re-engage Priya with reframed phase-one narrative | SA | This week |
