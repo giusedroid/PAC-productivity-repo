@@ -7,6 +7,10 @@
 3. Prepare a lightweight IoT architecture option for HelioFleet Services.
 4. Package backup and disaster recovery recommendations for PaperTrail Dental.
 
+## TODO
+
+- [ ] **URGENT** – Research AgentCore vs other cloud provider runtimes (for Ulbabrab). Compare agentic workload execution options across AWS, Azure, GCP. Due ASAP.
+
 ## Open Questions
 
 - Does HelioFleet need near-real-time alerting, or is hourly batch analysis sufficient?
