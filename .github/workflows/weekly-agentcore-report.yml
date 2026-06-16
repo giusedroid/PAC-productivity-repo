@@ -11,6 +11,8 @@ permissions:
 jobs:
   generate-agentcore-report:
     runs-on: ubuntu-latest
+    env:
+      KIRO_API_KEY: ${{ secrets.KIRO_API_KEY }}
 
     steps:
       - name: Check out repository
@@ -19,9 +21,18 @@ jobs:
       - name: Install Kiro CLI
         run: curl -fsSL https://cli.kiro.dev/install | bash
 
+      - name: Verify Kiro API key authentication
+        run: |
+          set -euo pipefail
+
+          if [ -z "${KIRO_API_KEY:-}" ]; then
+            echo "::error::KIRO_API_KEY is not available to this workflow. Add it as a repository or environment secret before running headless Kiro."
+            exit 1
+          fi
+
+          kiro-cli whoami
+
       - name: Generate AgentCore opportunity report
-        env:
-          KIRO_API_KEY: ${{ secrets.KIRO_API_KEY }}
         run: |
           set -euo pipefail
 
