@@ -6,7 +6,7 @@ All customers, people, companies, notes, opportunities, and outcomes are invente
 
 ## What Am I Working On Right Now
 
-Last updated: 2026-06-12
+Last updated: 2026-06-17
 
 | Status | Workstream | Current focus | Next action |
 | --- | --- | --- | --- |
@@ -14,6 +14,7 @@ Last updated: 2026-06-12
 | Yellow | HelioFleet Services | IoT ingestion architecture and cost model | Confirm expected telemetry volume |
 | Green | PaperTrail Dental | Backup, compliance, and disaster recovery plan | Prepare Well-Architected review notes |
 | Red | LumaLoop Retail | POS data integration blocked by vendor export limits | Escalate data access options |
+| Green | Ulbabrab | S3 opportunity for archived telemetry storage (CEO call) | Check in with tech team |
 
 ## Repository Map
 
